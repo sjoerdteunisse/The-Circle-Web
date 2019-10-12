@@ -1,0 +1,395 @@
+/* General css */
+
+:root {
+    --main-color: #fe0000; 
+    --main-bg-color: #333; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #0b7c82;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #0b7c82;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #0b7c82;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+button:focus{
+    outline: 0;
+}
+.wrapper{
+	width: 100%;
+	/* height: 100%; */
+    padding: 50px;
+    padding-bottom: 0px;
+}
+.max-width {
+    max-width: 414px;
+    width: 100%;
+    margin: auto;
+    height: 736px;
+}
+
+p {
+    margin: 0;
+}
+
+.nopadding {
+    padding: 0;
+}
+
+.d-flex {
+    display: flex;
+}
+.flex-center{
+	align-items: center;
+	justify-content: center;
+}
+.flex-1 {
+    flex: 1;
+}
+
+/* End general css */
+/* ----------------------- */
+/* Menu */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--main-bg-color);
+  }
+  
+  li {
+    float: left;
+  }
+
+  li:hover a {
+      text-decoration: none;
+      color: white;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color:var(--main-color);
+  }
+
+/* Ende menu */
+/* ----------------------- */
+/* Login page */
+
+.hd-icons i {
+    margin-left: 2px;
+}
+
+.logo {
+    font-size: 120px;
+    padding: 10px 0px;
+    display: block;
+    text-align: center;
+}
+.logo i {
+    text-shadow: 0px 0px 15px #00000073;
+}
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.subtitle{
+    margin-bottom: 15px;
+}
+
+.input-box {
+    flex: 1;
+    /* background: lightblue; */
+    background: #333;
+    height: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    padding: 10px;
+    border-radius: 6px;
+    align-items: center;
+}
+
+.input-box input {
+    background: transparent;
+    border: 0;
+    font-size: 15px;
+    text-transform: capitalize;
+     color: white;
+}
+
+
+
+.input-box input:focus {
+    outline: 0;
+}
+.forgot {
+  display:block;
+    margin-left: 10px;
+}
+span.forgot a {
+    color: #0b7c82;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+button:focus{
+    outline: 0;
+}
+.lg-btn {
+    margin-top: 15px;
+   
+}
+.lg-btn button {
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #fffc;
+    color: #1eacb0;
+    border: 0px;
+    transition: all .3s;
+}
+
+
+.signup-details {
+    background: #fffc;
+    padding: 40px 10px;
+    border-radius: 30px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    color: #1fadb1;
+    height: 120px;
+        cursor: pointer;
+        transition: all .3s
+}
+
+.new-txt {
+    color: #1eadb1ad;
+    font-size: 14px;
+}
+
+.sign-text {
+    font-size: 25px;
+}
+
+/* End login page */
+/* ----------------------- */
+/* Stream page */
+
+.streamvideo {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+}
+
+.chat {
+    background-color: var(--main-bg-color);
+    /* background-color: #f1f1f1; */
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+    float: left;
+    font-size: 14px;
+    position: relative;
+    
+}
+
+.chatpadding {
+    padding: 20px;
+}
+
+.chatdisplay {
+    background: white;
+    transition: all 0.5s;
+    height: auto;
+    max-height: 400px;
+    overflow: auto;
+}
+
+.chatbar {
+    width: 100%;
+}
+
+img.userImg {
+    width: 25px;
+    border: 1px solid #e3e3e3;
+    border-radius: 50%;
+}
+
+.chat div {
+    float: left;
+}
+
+
+span.chatUserName {
+    color: #11111199;
+    margin-right: 8px;
+    font-weight: inherit;
+}
+
+.chatMessage .img {
+    width: 35px;
+}
+
+p.chatBarTitle {
+    font-weight: bold;
+    color: white;
+}
+
+.chatMessage.col-xs-12 {
+    margin: 3px 0px;
+    padding: 0;
+}
+
+  .webflow-style-input input {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    font-size: 14px;
+    line-height: 2.4rem;
+    vertical-align: middle;
+    border-style: none;
+    background: transparent;
+    outline: none;
+}
+
+.webflow-style-input {
+    display: flex;
+    border-radius: 2px;
+    padding: 1.4rem 2rem 0.6rem;
+    padding-left: 0px;
+    border-bottom: 1px solid #263238;
+}
+
+.webflow-style-input input::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #11111199; 
+    font-size: 14px;
+    text-transform: inherit;
+} 
+
+.webflow-style-input button {
+    color: #7881A1;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    vertical-align: middle;
+    -webkit-transition: color .25s;
+    transition: color .25s;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+
+
+.chat:before {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    float: right;
+    transition: all 0.5s;
+    position: absolute;
+    color: white;
+    right: 20px;
+    top: 20px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.chat.closeChat .chatdisplay {
+    height: 0px;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+#chat.closeChat::before  {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+    
+}
+
+#left:after {
+    content: "";
+    height: 3px;
+    width: 50px;
+    position: absolute;
+    background: var(--main-color);
+    z-index: 2;
+  }
+  
+#right {
+    content: "";
+    height: 3px;
+    width: 200px;
+    position: absolute;
+    background: var(--main-bg-color);
+    z-index: 1;
+}
+
+.underline {
+    position: relative
+}
+
+.underline {
+    position: relative
+}
+
+.streamDescription {
+    padding: 12px;
+}
+
+.heading {
+    margin-bottom: 20px;
+}
+
+.heading p {
+    font-size: 31px;
+    font-weight: 500;
+}
+
+.row.otherStreams .streamvideo{
+    margin-bottom: 15px;
+}
+
+#streams4 div#chat {
+    margin-bottom: 30px;
+}
